@@ -10,18 +10,19 @@ header{
     list-style:none;
     display:flex;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 23%;
   }
   .botoes a{
     text-decoration:none;
-    color:white;
+    color:#969696;
     font-size:24px;
     font-family: arial;
     margin-right: 50px;
+    transition: .2s;
   }
   
   .botoes a:hover{
-    color:#811797
+    color:#ffffff;
   
   }
   .botoes li{
@@ -32,3 +33,23 @@ header{
     margin-left: 50px;
   }
   
+  .button_Contato{
+  display: flex;
+  align-items:center;
+  margin-left: 27%;
+  }
+
+  .button_Contato button{
+  padding: 10px 35px;
+  font-size: 20px;
+  background-color: #0066FF;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  }
+
+  .button_Contato button:hover{
+  background: rgba(0,0,0,0);    
+  color:#0066FF;
+  box-shadow: inset 0 0 0 3px #0066FF;
+  }

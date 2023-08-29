@@ -1,0 +1,51 @@
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+.txt_site{
+
+    color: white;
+
+}
+
+section.topo_site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.topo_site{
+
+    color: #ffff;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.img_top img{
+    width: 380px;
+    margin-left: 100%;
+ 
+}
+
+.botao_contato button{
+    padding: 10px 35px;
+    font-size: 20px;
+    background-color: #0066FF;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    }
+  
+    .botao_contato button:hover{
+    background: rgba(0,0,0,0);    
+    color:#0066FF;
+    box-shadow: inset 0 0 0 3px #0066FF;
+    }
