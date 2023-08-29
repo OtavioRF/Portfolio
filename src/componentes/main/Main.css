@@ -32,7 +32,7 @@ section.topo_site .flex{
 .img_top img{
     width: 380px;
     margin-left: 100%;
- 
+    animation: float 3s ease-in-out infinite;
 }
 
 .botao_contato button{
@@ -48,4 +48,14 @@ section.topo_site .flex{
     background: rgba(0,0,0,0);    
     color:#0066FF;
     box-shadow: inset 0 0 0 3px #0066FF;
+    }
+
+
+    @keyframes float{
+        0%, 100%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
     }
