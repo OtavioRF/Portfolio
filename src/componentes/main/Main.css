@@ -26,12 +26,12 @@ section.topo_site .flex{
     font-size: 18px;
     line-height: 26px;
     margin-left: 10%;
-    margin-right: 30%;
+    margin-right: 20%;
 }
 
 .img_top img{
-    width: 380px;
-    margin-left: 100%;
+    width: 350px;
+    margin-left: 87%;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -59,3 +59,39 @@ section.topo_site .flex{
             transform: translateY(-30px);
         }
     }
+
+.especialidade{
+    color: #ffff;
+    padding: 30px 4%;
+    
+}
+
+.titulo{
+color: #ffff;
+font-size: 35px;
+text-align: center;
+}
+
+.titulo span{
+    color: #0066FF;
+}
+
+.especialidade_box{
+    color: #ffff;
+    padding: 40px;
+    font-size: 18px
+}
+
+.h3L{
+text-align: center;
+}
+
+.especialidade_box p{
+text-align: center;
+}
+
+.especialidade_box img{
+    width: 100px;
+    margin-left: 43%;
+}
+

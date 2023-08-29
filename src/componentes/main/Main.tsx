@@ -1,5 +1,8 @@
 import './Main.css'
 import pc from "../../assets/pc_pixel.png"
+import gm from "../../assets/GameMakerLogo.png"
+import jv from "../../assets/Jvs.png"
+
 export default function Main(){
   return(
   <main>
@@ -23,6 +26,27 @@ export default function Main(){
 
           </div>
         </div>
+    </div>
+
+    </section>
+
+    <section className='especialidade'>
+    <div className='interface'>
+      <h2 className='titulo'>MINHAS <span>ESPECIALIDADES</span></h2>
+      <div className='flex'>
+        <div className='especialidade_box'>
+        <img className='img2' src={gm} alt="logo" />
+          <h3 className='h3L'>Game Maker</h3>
+          <p>INICIANDO PROJETOS DE PRODUÇÃO DE JOGOS 2D NO GAME MAKER, VENHA CONHECER ALGUNS PROJETOS FEITOS POR MIM!</p>
+        </div>
+
+        <div className='especialidade_box'>
+        <img src={jv} alt="logo" />
+          <h3 className='h3L'>JavaScript</h3>
+          <p>PROJETOS FEITOS EM JAVASCRIPT NO CONTEXTO ESCOLAR, CONHEÇA ALGUNS DELES!</p>
+        </div>
+
+      </div>
     </div>
 
     </section>
