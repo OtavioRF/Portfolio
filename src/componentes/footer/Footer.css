@@ -1,80 +1,75 @@
 footer{
-    background-color:#ff80d0;
-    font-family:Arial;
-    max-width: 100%;
-    
-  }
-  
-  img{
-    width:25px;
-    margin-left:20px;
-  }
-  
-  .container{
-    display:flex;
-    color:white;
-  }
-  
-  .container p{
-    text-align:center;
-    margin-bottom: 10px
-  }
-  
-  .container ul{
-    width:15%;
-    margin-top:20px;
-    align-items:center;
-    
-  }
-  
-  .container h3{
-    margin-bottom:10px;
-    font-weight:600;
-    
-  }
-  
-  .container img{
-    width:130px;
-    margin-left:27%
-  }
-  
-  .container a{
-    color:white;
-    text-decoration:none;
-  }
-  
-  .container a:hover{
-   color: #f94eba;
-  }
-  
-  .container li{
-    list-style:none;
-    margin-bottom:10px
-  }
-  
-  .Redes{
-    display:flex;
-    flex-direction:row
-  }
-  
-  .Redes img{
-    width:30px;
-    margin-left:46px;
-    margin-bottom:20px
-  }
-  
-  .score{
-    display:flex;
-    flex-direction:row;
-  }
-  
-  
-  .score img{
-    margin-left:7px;
-    margin-bottom:20px
-  }
-  
-  .copyright{
-    text-align:center;
-    color:white;
-  }
+  background-color:#000000;
+  font-family:Arial;
+  max-width: 100%;    
+  box-sizing:border-box
+}
+
+.container_footer{
+padding: 50px 20px 20px;
+}
+
+.redes_sociais{
+display:flex;
+justify-content:center
+}
+
+.redes_sociais a{
+border-radius:30%;
+text-decoration:none;
+background-color:white;
+padding:10px;
+margin:10px;
+}
+
+.redes_sociais a i{
+font-size:2em;
+color:black;
+}
+
+.redes_sociais a:hover{
+background-color:#000000;
+transition: .4s
+}
+
+.redes_sociais a:hover i{
+color:#0066FF;
+transition: .2s  
+}
+
+.footer_nav{
+margin: 30px;
+}
+
+.footer_nav ul{
+display:flex;
+justify-content:center;
+list-style-type: none;
+}
+
+.footer_nav ul li a{
+color:#969696;
+margin: 20px;
+text-decoration:none;
+font-size:1em;
+transition: .2;
+}
+
+.footer_nav ul li a:hover{
+color:white;
+}
+
+.footer_final{
+text-align:center;
+color:white;
+padding:10px;
+opacity:0.7;
+}
+
+.footer_final span{
+color:#0066FF;
+}
+
+.linha hr{
+width:50%;
+}
