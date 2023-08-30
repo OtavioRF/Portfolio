@@ -1,8 +1,4 @@
 import './Footer.css'
-import rede from "../../assets/instagramc.png"
-import rede2 from "../../assets/twitterc.png"
-import rede3 from "../../assets/youtubec.png"
-
 
 
 export default function Footer() {
