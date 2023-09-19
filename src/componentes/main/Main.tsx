@@ -1,11 +1,56 @@
 import './Main.css'
 import pc from "../../assets/pc_pixel.png"
-import gm from "../../assets/GameMakerLogo.png"
-import jv from "../../assets/Jvs.png"
+import React, { useState } from "react";
+import Trabalho from '../trabalhos/trabalhos';
+
+type Trabalhostype = {
+  id: number;
+  titulo:string,
+  descricao:string,
+  imagem:string
+};
 
 export default function Main(){
+  const [texto, setTexto] = useState("");
+  const trabalhos: Trabalhostype[] = [
+    {
+      id: 1,
+      titulo: "Barbie",
+      descricao:
+        "Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
+      imagem: "/teste.png",
+    },
+    {
+      id: 2,
+      titulo: "Oppenheimer",
+      descricao:
+        "O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.",
+      imagem: "/teste2.jpg",
+    },
+    {
+      id: 3,
+      titulo: "Bullet-Train",
+      descricao:
+        "Em um trem-bala indo rapidamente de Tóquio a Morioka, cinco assassinos profissionais descobrem que possuem o mesmo objetivo.",
+      imagem: "/teste3.png",
+    },
+    {
+      id: 4,
+      titulo: "Barbie sereia",
+      descricao: "Uma sereia estilista tem o poder de mudar a cor de pérolas preciosas.",
+      imagem: "/teste4.jpg",
+    },
+  ];
+
+  function muda_txt(e: React.ChangeEvent<HTMLInputElement>) {
+    setTexto(e.target.value);
+  }
+
   return(
+    <>
+   
   <main>
+ 
 
     <section className='topo_site'>
       <div className='interface'>
@@ -34,17 +79,29 @@ export default function Main(){
     <div className='interface'>
       <h2 className='titulo'>MINHAS <span>ESPECIALIDADES</span></h2>
       <div className='flex'>
-        <div className='especialidade_box'>
-        <img className='img2' src={gm} alt="logo" />
-          <h3 className='h3L'>Game Maker</h3>
-          <p>INICIANDO PROJETOS DE PRODUÇÃO DE JOGOS 2D NO GAME MAKER, VENHA CONHECER ALGUNS PROJETOS FEITOS POR MIM!</p>
-        </div>
+  
+      </div>
 
-        <div className='especialidade_box'>
-        <img src={jv} alt="logo" />
-          <h3 className='h3L'>JavaScript</h3>
-          <p>PROJETOS FEITOS EM JAVASCRIPT NO CONTEXTO ESCOLAR, CONHEÇA ALGUNS DELES!</p>
-        </div>
+<div className='areaPesquisa'>
+      <div className="pesquisaT">
+        <input className="barrapesquisa" type="text" placeholder='Buscar atividades' onChange={muda_txt}></input>
+      </div>
+
+<div className='trabalhoMain'>
+  {trabalhos
+          .filter((trabalho) =>
+            trabalho.titulo.toLowerCase().includes(texto.toLowerCase())
+          )
+          .map((trabalho) => (
+            <Trabalho
+              key={trabalho.id}
+              descricao={trabalho.descricao}
+              titulo={trabalho.titulo}
+              imagem={trabalho.imagem}
+            />
+          ))}
+</div>
+
 
       </div>
     </div>
@@ -52,5 +109,6 @@ export default function Main(){
     </section>
 
   </main>
+  </>
   )
 };

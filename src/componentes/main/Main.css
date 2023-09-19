@@ -95,8 +95,48 @@ text-align: center;
 text-align: center;
 }
 
-.especialidade_box img{
-    width: 100px;
-    margin-left: 43%;
+
+
+
+
+
+.trabalhoMain{
+    padding: 50px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 25px;
 }
+
+
+
+
+
+
+.barrapesquisa{
+    padding: 10px;
+    border: 1px solid #0066FF;
+    width: 20em;
+    border-radius: 10px;
+    font-size: 1.4rem;
+
+}
+
+.barrapesquisa:focus-visible{
+    outline: 1px solid #0066FF;
+}
+
+.pesquisaT{
+    padding: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+.pesquisaT img{
+    min-height: 350px;
+    display:flex;
+    align-items: center;    
+}
+
 

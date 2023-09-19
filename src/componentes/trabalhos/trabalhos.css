@@ -1,0 +1,25 @@
+.trabalho_container{
+    padding: 50px;
+    box-shadow: 0px 0px 5px 1px #0066FF;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    
+}
+
+.foto-trabalho{
+    min-height: 350px;
+    display:flex;
+    align-items: center;
+}
+.foto-trabalho>img{
+    width: 100%;
+}
+
+.descricao{
+    text-align: justify;
+}
+
+.trabalho_container h1{
+    text-align: center;
+}
