@@ -15,30 +15,30 @@ export default function Main(){
   const trabalhos: Trabalhostype[] = [
     {
       id: 1,
-      titulo: "Barbie",
+      titulo: "Robótica",
       descricao:
-        "Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-      imagem: "/teste.png",
+        "Participei do projeto de Robotica feito pelo IFMS, durante o desenvolvimento do mesmo",
+      imagem: "/robo.png",
     },
     {
       id: 2,
-      titulo: "Oppenheimer",
+      titulo: "GameMaker",
       descricao:
-        "O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.",
-      imagem: "/teste2.jpg",
+        "Sou programador iniciante na plataforma GameMaker, atualmente estou criando protótipos de jogos (Projeto ainda sem fotos)",
+      imagem: "/GameMakerL.png",
     },
-    {
+    { 
       id: 3,
-      titulo: "Bullet-Train",
+      titulo: "Html",
       descricao:
-        "Em um trem-bala indo rapidamente de Tóquio a Morioka, cinco assassinos profissionais descobrem que possuem o mesmo objetivo.",
-      imagem: "/teste3.png",
+        "Possuo experiencia no desenvolvimento de sites, possuo projetos feitos no meio academico",
+      imagem: "/htmlLogo.png",
     },
     {
       id: 4,
-      titulo: "Barbie sereia",
-      descricao: "Uma sereia estilista tem o poder de mudar a cor de pérolas preciosas.",
-      imagem: "/teste4.jpg",
+      titulo: "JavaScript",
+      descricao: "Com o conhecimento adquirido durante meu curso integrado, desenvolvi alguns sites utilizando o JS",
+      imagem: "/Jvs.png",
     },
   ];
 

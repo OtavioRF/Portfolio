@@ -1,14 +1,14 @@
 .trabalho_container{
     padding: 50px;
-    box-shadow: 0px 0px 5px 1px #0066FF;
-    border-radius: 30px;
+    box-shadow: 0px 0px 9px 3px #0066FF;
+    border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     
 }
 
 .foto-trabalho{
-    min-height: 350px;
+    min-height: 200px;
     display:flex;
     align-items: center;
 }
@@ -17,7 +17,7 @@
 }
 
 .descricao{
-    text-align: justify;
+    text-align: center;
 }
 
 .trabalho_container h1{

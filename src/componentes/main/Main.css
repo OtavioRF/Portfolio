@@ -116,11 +116,14 @@ text-align: center;
 
 .barrapesquisa{
     padding: 10px;
-    border: 1px solid #0066FF;
+    border: 2px solid #0066FF;
     width: 20em;
-    border-radius: 10px;
+    border-radius: 3px;
     font-size: 1.4rem;
+}
 
+.barrapesquisa::placeholder{
+    color: #535353;
 }
 
 .barrapesquisa:focus-visible{
