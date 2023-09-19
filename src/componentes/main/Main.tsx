@@ -17,27 +17,27 @@ export default function Main(){
       id: 1,
       titulo: "Robótica",
       descricao:
-        "Participei do projeto de Robotica feito pelo IFMS, durante o desenvolvimento do mesmo",
+        "Participei do projeto de Robotica feito pelo IFMS, durante o desenvolvimento do mesmo. Clique para ver os projetos!",
       imagem: "/robo.png",
     },
     {
       id: 2,
       titulo: "GameMaker",
       descricao:
-        "Sou programador iniciante na plataforma GameMaker, atualmente estou criando protótipos de jogos (Projeto ainda sem fotos)",
+        "Sou programador iniciante na plataforma GameMaker, atualmente estou criando protótipos de jogos. Clique para ver os projetos! (Projeto ainda sem fotos)",
       imagem: "/GameMakerL.png",
     },
     { 
       id: 3,
       titulo: "Html",
       descricao:
-        "Possuo experiencia no desenvolvimento de sites, possuo projetos feitos no meio academico",
+        "Possuo experiencia no desenvolvimento de sites, possuo projetos feitos no meio academico. Clique para ver os projetos!",
       imagem: "/htmlLogo.png",
     },
     {
       id: 4,
       titulo: "JavaScript",
-      descricao: "Com o conhecimento adquirido durante meu curso integrado, desenvolvi alguns sites utilizando o JS",
+      descricao: "Com o conhecimento adquirido durante meu curso integrado, desenvolvi alguns sites utilizando o JS. Clique para ver os projetos!",
       imagem: "/Jvs.png",
     },
   ];

@@ -4,7 +4,11 @@
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-    
+}
+
+.trabalho_container:hover{
+    box-shadow: 0px 0px 9px 3px #f12222;
+    cursor: pointer;
 }
 
 .foto-trabalho{
