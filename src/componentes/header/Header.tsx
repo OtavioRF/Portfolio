@@ -1,25 +1,26 @@
 import './Header.css'
 import teste from "../../assets/LogoP.png"
+import { Link } from 'react-router-dom'
 export default function Header(){
   return(
      <header>
        
   <nav className="navbar">
 
-  <img src={teste} alt="logo" />
+  <Link to="/"><img src={teste} alt="logo" /></Link>  
 
 
    <ul className="botoes">
      
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Projetos</a></li>
-      <li><a href="#">Sobre</a></li>
+   <li><Link to="/">Inicio</Link></li>
+   <li><Link to="/contato">Contato</Link></li>
+   <li><Link to="/sobre">Sobre</Link></li>
             
   </ul>
   
  <div className='button_Contato'>
 
-          <a href='#'><button>Contato</button></a>
+          <a><Link to="/contato"><button>Contato</button></Link></a>
 
       </div>
 

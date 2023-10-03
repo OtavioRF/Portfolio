@@ -2,7 +2,7 @@ import './Main.css'
 import pc from "../../assets/pc_pixel.png"
 import React, { useState } from "react";
 import Trabalho from '../trabalhos/trabalhos';
-
+import { Link } from 'react-router-dom'
 type Trabalhostype = {
   id: number;
   titulo:string,
@@ -62,7 +62,7 @@ export default function Main(){
               explorando novas tecnologias e aprimorando minhas habilidades para criar experiências digitais inovadoras e impactantes.</p>
 
               <div className='botao_contato'>
-                <a href='#'><button>Entrar em contato</button></a>
+                <a><Link to="/contato"><button>Entrar em contato</button></Link></a>
               </div>
           </div>
 
