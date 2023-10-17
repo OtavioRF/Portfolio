@@ -2,10 +2,20 @@
   import React, { useState } from "react";
   export default function Contato() {
     const [texto, setTexto] = useState("");
+    const [email, setEmail] = useState("");
+    const [assunto, setAssunto] = useState("");
 
     function change_txt(e: React.ChangeEvent<HTMLInputElement>) {
-
       setTexto(e.target.value);
+
+    }
+    function change_email(e: React.ChangeEvent<HTMLInputElement>) {
+      setEmail(e.target.value);
+
+    }
+    function change_assunto(e: React.ChangeEvent<HTMLInputElement>) {
+      setAssunto(e.target.value);
+
     }
     return (
 
@@ -28,14 +38,14 @@
           <h2>FORMULARIO PARA CONTATO</h2>
           
           
-          <input type='text' name='name' placeholder='Digite seu nome' onChange={change_txt}></input> 
-          
-          <input type='email' name='email' placeholder='Digite seu email'onChange={change_txt}></input>
+          <input type='text' name='name' placeholder='Digite seu nome' onChange={change_txt}></input><p>Nome:{texto}</p>
+         
+          <input type='email' name='email' placeholder='Digite seu email'onChange={change_email}></input><p>Email:{email}</p>
         
-          <input type='text' name='message' placeholder='Assunto'onChange={change_txt}></input>
+          <input type='text' name='message' placeholder='Assunto'onChange={change_assunto}></input> <p>Assunto:{assunto}</p>
 
           <button type='submit'>Enviar</button>
-          <p>Texto digitado no ultimo campo: {texto}</p>
+          
       </div>
           
     </div>
