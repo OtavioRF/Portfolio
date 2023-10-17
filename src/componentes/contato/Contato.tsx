@@ -38,12 +38,11 @@
           <h2>FORMULARIO PARA CONTATO</h2>
           
           
-          <input type='text' name='name' placeholder='Digite seu nome' onChange={change_txt}></input><p>Nome:{texto}</p>
+          <p>Nome:{texto}</p><input type='text' name='name' placeholder='Digite seu nome' onChange={change_txt}></input>
          
-          <input type='email' name='email' placeholder='Digite seu email'onChange={change_email}></input><p>Email:{email}</p>
+          <p>Email:{email}</p><input type='email' name='email' placeholder='Digite seu email'onChange={change_email}></input>
         
-          <input type='text' name='message' placeholder='Assunto'onChange={change_assunto}></input> <p>Assunto:{assunto}</p>
-
+          <p>Assunto:{assunto}</p><input type='text' name='message' placeholder='Assunto'onChange={change_assunto}></input> 
           <button type='submit'>Enviar</button>
           
       </div>
