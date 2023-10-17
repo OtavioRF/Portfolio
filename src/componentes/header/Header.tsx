@@ -20,7 +20,7 @@ export default function Header(){
   
  <div className='button_Contato'>
 
-          <a><Link to="/contato"><button>Contato</button></Link></a>
+          <Link to="/contato"><button>Contato</button></Link>
 
       </div>
 
